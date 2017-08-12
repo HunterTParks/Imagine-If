@@ -202,8 +202,11 @@
 --resource:"C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\obj\Debug\netcoreapp1.0\ImagineIfdotnet-compile.deps.json",ImagineIf.deps.json
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Program.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Startup.cs
+C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Controllers\AccountController.cs
+C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Controllers\HomeController.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Migrations\20170812072410_Initial.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Migrations\20170812072410_Initial.Designer.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Models\ApplicationDbContext.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Models\ApplicationUser.cs
+C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\ViewModels\RegisterViewModel.cs
