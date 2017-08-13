@@ -3,6 +3,8 @@ A website created by *_Hunter Parks_* based on the guild Imagine If
 
 This README is for Hunter so He can remember the list of things he needs to implement into the website
 
+***
+
 List of things Hunter has jolted down are as follows...
 
 ### Backend Development
@@ -15,6 +17,8 @@ List of things Hunter has jolted down are as follows...
 * Streaming schedules
 * Steam API Integration
 * Discord API Integration?
+
+***
 
 ### Frontend Development
 ###### This will be empty until Descargo gives the 'All Clear'
