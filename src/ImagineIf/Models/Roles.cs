@@ -28,4 +28,17 @@ private async Task CreateRoles(IServiceProvider serviceProvider)
         UserName = Configuration.GetSection("UserSettings")["UserEmail"],
         Email = Configuration.GetSection("UserSettings")["UserEmail"]
     };
+
+    string UserPassword = Configuration.GetSection("UserSettings")["UserPassword"];
+    var _user = await UserManager.FindByEmailAsync(Configuration.GetSection("UserSettings")["UserEmail"]);
+
+    if(_user == null)
+    {
+        var createPowerUser = await UserManager.CreateAsync(poweruser, UserPassword);
+        if(createPowerUser.Succeeded)
+        {
+            //here we tie the new user to the admin role
+            await UserManager.AddToRoleAsync(poweruser, "Admin");
+        }
+    }
 }
