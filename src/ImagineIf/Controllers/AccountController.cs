@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using ImagineIf.Models;
 using System.Threading.Tasks;
 using ImagineIf.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ImagineIf.Controllers
 {
@@ -19,6 +20,7 @@ namespace ImagineIf.Controllers
             _db = db;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
