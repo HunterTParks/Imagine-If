@@ -12,7 +12,7 @@ private async Task CreateRoles(IServiceProvider serviceProvider)
     string[] roleNames = { "Admin", "Moderator", "Member" };
     IdentityResult roleResult;
 
-    foreach(var roleName in roleNames)
+    foreach (var roleName in roleNames)
     {
         //creating the roles and seeding them into the database
         var roleExist = await RoleManager.RoleExistsAsync(roleName);

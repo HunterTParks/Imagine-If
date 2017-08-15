@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ImagineIf.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System;
 
 namespace ImagineIf
 {
@@ -30,7 +31,7 @@ namespace ImagineIf
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
         }
-        public void Configure(IApplicationBuilder app)
+        public async void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
         {
             app.UseIdentity();
             app.UseMvc(routes =>
@@ -39,6 +40,8 @@ namespace ImagineIf
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            await CreateRoles(serviceProvider);
 
             app.UseStaticFiles();
 
