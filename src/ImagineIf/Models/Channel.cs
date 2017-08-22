@@ -12,7 +12,7 @@ namespace ImagineIf.Models
         public int guild_id { get; set; }
         public string name { get; set; }
 
-        public static List<DiscordMessage> GetMessages
+        public static List<DiscordMessage> GetMessages()
         {
             
         }
