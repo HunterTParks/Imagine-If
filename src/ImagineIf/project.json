@@ -20,7 +20,8 @@
       "type": "platform"
     },
     "Jint": "2.11.10",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0"
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0",
+    "Discord.Net": "1.0.1"
   },
 
   "tools": {
