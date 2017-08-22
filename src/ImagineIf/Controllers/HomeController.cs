@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ImagineIf.Models;
 
 namespace ImagineIf.Controllers
 {
@@ -7,7 +8,8 @@ namespace ImagineIf.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            var allMessages = Channel.GetMessages();
+            return View(allMessages);
         }
     }
 }
