@@ -11,5 +11,10 @@ namespace ImagineIf.Models
         public int type { get; set; }
         public int guild_id { get; set; }
         public string name { get; set; }
+
+        public static List<DiscordMessage> GetMessages
+        {
+            
+        }
     }
 }
