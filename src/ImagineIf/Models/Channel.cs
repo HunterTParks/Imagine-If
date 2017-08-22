@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Discord.Net.Rest;
+using RestSharp;
+using RestSharp.Authenticators;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ImagineIf.Models
@@ -24,7 +27,16 @@ namespace ImagineIf.Models
         public List<DiscordMessage> GetMessages()
         {
             var client = new RestClient("https://discordapp.com/api/v6");
-
+            var request = new RestRequest("/channels/348697779436126209/messages");
+            client.Authenticator = new HttpBasicAuthenticator("349610917966905345", "Ho_POj-p6Ex-cCLZW-f3NxDg9bDqKZvJ");
+            var response = new RestSharp.RestResponse();
+            Task.Run(async () =>
+            {
+                response = await GetResponseContentAsync(client, request) as RestSharp.RestResponse;
+            }).Wait();
+            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+            var messageList = JsonConvert.DeserializeObject<List<DiscordMessage>>(jsonResponse["messages"].ToString());
+            return messageList;
         }
     }
 }
