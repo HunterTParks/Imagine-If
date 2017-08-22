@@ -21,7 +21,7 @@ namespace ImagineIf.Models
         public int Owner_Id { get; set; }
         public int Application_Id { get; set; }
 
-        public static List<DiscordMessage> GetMessages()
+        public List<DiscordMessage> GetMessages()
         {
             
         }
