@@ -41,7 +41,7 @@ namespace ImagineIf
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            await CreateRoles(serviceProvider);
+            //await CreateRoles(serviceProvider);
 
             app.UseStaticFiles();
 
