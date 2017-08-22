@@ -30,13 +30,24 @@ namespace ImagineIf.Models
             var request = new RestRequest("/channels/348697779436126209/messages");
             client.Authenticator = new HttpBasicAuthenticator("349610917966905345", "Ho_POj-p6Ex-cCLZW-f3NxDg9bDqKZvJ");
             var response = new RestSharp.RestResponse();
+
             Task.Run(async () =>
             {
                 response = await GetResponseContentAsync(client, request) as RestSharp.RestResponse;
             }).Wait();
+
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
             var messageList = JsonConvert.DeserializeObject<List<DiscordMessage>>(jsonResponse["messages"].ToString());
             return messageList;
+        }
+
+        public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
+        {
+            var tcs = new TaskCompletionSource<IRestResponse>();
+            theClient.ExecuteAsync(theRequest, response => {
+                tcs.SetResult(response);
+            });
+            return tcs.Task;
         }
     }
 }
