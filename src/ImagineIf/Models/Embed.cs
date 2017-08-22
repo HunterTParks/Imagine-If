@@ -13,7 +13,7 @@ namespace ImagineIf.Models
         public string Url { get; set; }
         public DateTime TimeStamp { get; set; }
         public int Color { get; set; }
-        public EmbedFooter footer { get; set; }
+        public EmbedFooter Footer { get; set; }
         public EmbedImage Image { get; set; }
         public EmbedThumbnail Thumbnail { get; set; }
         public EmbedVideo Video { get; set; }
