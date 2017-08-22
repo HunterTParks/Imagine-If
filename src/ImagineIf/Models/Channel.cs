@@ -24,7 +24,7 @@ namespace ImagineIf.Models
         public int Owner_Id { get; set; }
         public int Application_Id { get; set; }
 
-        public List<DiscordMessage> GetMessages()
+        public static List<DiscordMessage> GetMessages()
         {
             var client = new RestClient("https://discordapp.com/api/v6");
             var request = new RestRequest("/channels/348697779436126209/messages");
