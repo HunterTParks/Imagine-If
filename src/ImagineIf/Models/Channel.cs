@@ -23,7 +23,8 @@ namespace ImagineIf.Models
 
         public List<DiscordMessage> GetMessages()
         {
-            
+            var client = new RestClient("https://discordapp.com/api/v6");
+
         }
     }
 }
