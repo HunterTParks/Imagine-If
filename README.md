@@ -1,6 +1,8 @@
 # Imagine If
 A website created by *_Hunter Parks_* based on the guild Imagine If
 
+[![Inline docs](http://inch-ci.org/github/huntertparks/Imagine-If.svg?branch=master)](http://inch-ci.org/github/huntertparks/Imagine-If)
+
 This README is for Hunter so He can remember the list of things he needs to implement into the website
 
 ***
