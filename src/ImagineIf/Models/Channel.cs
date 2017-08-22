@@ -19,7 +19,7 @@ namespace ImagineIf.Models
         public string Topic { get; set; }
         public int Bitrate { get; set; }
         public int User_Limit { get; set; }
-        public List<ApplicationUser> Recipients { get; set; }
+        public List<User> Recipients { get; set; }
         public string Icon { get; set; }
         public int Owner_Id { get; set; }
         public int Application_Id { get; set; }
