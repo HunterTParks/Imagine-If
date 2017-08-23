@@ -1,12 +1,12 @@
---temp-output:C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\obj\Debug\netcoreapp1.0\
---out:C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\bin\Debug\netcoreapp1.0\ImagineIf.dll
---define:DEBUG
+--temp-output:C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\obj\Release\netcoreapp1.0\
+--out:C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\bin\Release\netcoreapp1.0\ImagineIf.dll
+--define:RELEASE
 --define:TRACE
 --define:NETCOREAPP1_0
 --suppress-warning:CS1701
 --suppress-warning:CS1702
 --suppress-warning:CS1705
---optimize:False
+--optimize:True
 --emit-entry-point:True
 --output-name:ImagineIf
 --file-version:1.0.0.0
@@ -205,7 +205,7 @@
 --reference:C:\Users\reptar2693\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\reptar2693\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\reptar2693\.nuget\packages\System.Xml.XmlDocument\4.3.0\ref\netstandard1.3\System.Xml.XmlDocument.dll
---resource:"C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\obj\Debug\netcoreapp1.0\ImagineIfdotnet-compile.deps.json",ImagineIf.deps.json
+--resource:"C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\obj\Release\netcoreapp1.0\ImagineIfdotnet-compile.deps.json",ImagineIf.deps.json
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Program.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Startup.cs
 C:\Users\reptar2693\Documents\Visual Studio 2015\Projects\Imagine-if\src\ImagineIf\Controllers\AccountController.cs
