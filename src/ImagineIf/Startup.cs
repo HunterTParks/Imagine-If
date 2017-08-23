@@ -31,7 +31,7 @@ namespace ImagineIf
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
         }
-        public async void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
         {
             app.UseIdentity();
             app.UseMvc(routes =>
